@@ -78,6 +78,58 @@
         "async": false
       }
     },
+    "(app-client)/./app/signin/ProvidersWrapper.tsx": {
+      "": {
+        "id": "(sc_client)/./app/signin/ProvidersWrapper.tsx",
+        "name": "",
+        "chunks": [
+          "app/signin/layout:app/signin/layout"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./app/signin/ProvidersWrapper.tsx",
+        "name": "*",
+        "chunks": [
+          "app/signin/layout:app/signin/layout"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./app/signin/ProvidersWrapper.tsx",
+        "name": "default",
+        "chunks": [
+          "app/signin/layout:app/signin/layout"
+        ],
+        "async": false
+      }
+    },
+    "(app-client)/./node_modules/next/dist/client/link.js": {
+      "": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "",
+        "chunks": [
+          "app/signup/page:app/signup/page"
+        ],
+        "async": false
+      },
+      "*": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "*",
+        "chunks": [
+          "app/signup/page:app/signup/page"
+        ],
+        "async": false
+      },
+      "default": {
+        "id": "(sc_client)/./node_modules/next/dist/client/link.js",
+        "name": "default",
+        "chunks": [
+          "app/signup/page:app/signup/page"
+        ],
+        "async": false
+      }
+    },
     "(app-client)/./node_modules/next/dist/client/components/app-router.js": {
       "": {
         "id": "(sc_client)/./node_modules/next/dist/client/components/app-router.js",
@@ -207,32 +259,6 @@
         ],
         "async": false
       }
-    },
-    "(app-client)/./app/signin/ProvidersWrapper.tsx": {
-      "": {
-        "id": "(sc_client)/./app/signin/ProvidersWrapper.tsx",
-        "name": "",
-        "chunks": [
-          "app/signin/layout:app/signin/layout"
-        ],
-        "async": false
-      },
-      "*": {
-        "id": "(sc_client)/./app/signin/ProvidersWrapper.tsx",
-        "name": "*",
-        "chunks": [
-          "app/signin/layout:app/signin/layout"
-        ],
-        "async": false
-      },
-      "default": {
-        "id": "(sc_client)/./app/signin/ProvidersWrapper.tsx",
-        "name": "default",
-        "chunks": [
-          "app/signin/layout:app/signin/layout"
-        ],
-        "async": false
-      }
     }
   },
   "__edge_ssr_module_mapping__": {},
@@ -336,6 +362,58 @@
       "name": "default",
       "chunks": [
         "app/layout:app/layout"
+      ],
+      "async": false
+    }
+  },
+  "D:\\Block_landing\\Trizwit-BlockIoT\\app\\signin\\ProvidersWrapper.tsx": {
+    "": {
+      "id": "(app-client)/./app/signin/ProvidersWrapper.tsx",
+      "name": "",
+      "chunks": [
+        "app/signin/layout:app/signin/layout"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./app/signin/ProvidersWrapper.tsx",
+      "name": "*",
+      "chunks": [
+        "app/signin/layout:app/signin/layout"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./app/signin/ProvidersWrapper.tsx",
+      "name": "default",
+      "chunks": [
+        "app/signin/layout:app/signin/layout"
+      ],
+      "async": false
+    }
+  },
+  "D:\\Block_landing\\Trizwit-BlockIoT\\node_modules\\next\\dist\\client\\link.js": {
+    "": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "",
+      "chunks": [
+        "app/signup/page:app/signup/page"
+      ],
+      "async": false
+    },
+    "*": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "*",
+      "chunks": [
+        "app/signup/page:app/signup/page"
+      ],
+      "async": false
+    },
+    "default": {
+      "id": "(app-client)/./node_modules/next/dist/client/link.js",
+      "name": "default",
+      "chunks": [
+        "app/signup/page:app/signup/page"
       ],
       "async": false
     }
@@ -466,32 +544,6 @@
       "name": "default",
       "chunks": [
         "app/signin/page:app/signin/page"
-      ],
-      "async": false
-    }
-  },
-  "D:\\Block_landing\\Trizwit-BlockIoT\\app\\signin\\ProvidersWrapper.tsx": {
-    "": {
-      "id": "(app-client)/./app/signin/ProvidersWrapper.tsx",
-      "name": "",
-      "chunks": [
-        "app/signin/layout:app/signin/layout"
-      ],
-      "async": false
-    },
-    "*": {
-      "id": "(app-client)/./app/signin/ProvidersWrapper.tsx",
-      "name": "*",
-      "chunks": [
-        "app/signin/layout:app/signin/layout"
-      ],
-      "async": false
-    },
-    "default": {
-      "id": "(app-client)/./app/signin/ProvidersWrapper.tsx",
-      "name": "default",
-      "chunks": [
-        "app/signin/layout:app/signin/layout"
       ],
       "async": false
     }

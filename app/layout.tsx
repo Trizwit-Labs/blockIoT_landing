@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import ScrollToTop from "@/components/ScrollToTop";
 import "node_modules/react-modal-video/css/modal-video.css";
 import "../styles/index.css";
+import ProvidersWrapper from "./signin/ProvidersWrapper";
 
 export default function RootLayout({
   children,
@@ -22,7 +23,9 @@ export default function RootLayout({
       <body className="dark:bg-black">
         <Providers>
           <Header />
+          <ProvidersWrapper>
           {children}
+          </ProvidersWrapper>
           <Footer />
           <ScrollToTop />
         </Providers>

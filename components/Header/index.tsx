@@ -4,8 +4,12 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import ThemeToggler from "./ThemeToggler";
 import menuData from "./menuData";
+import { useSession } from "next-auth/react";
+import { sessionValue } from "../../app/signin/Login";
+
 
 const Header = () => {
+ 
   // Navbar toggle
   const [navbarOpen, setNavbarOpen] = useState(false);
   const navbarToggleHandler = () => {
@@ -57,27 +61,7 @@ const Header = () => {
                   BlockIoT
                 </h2>
               </Link>
-              {/*<Link
-                href="/"
-                className={`header-logo block w-full ${
-                  sticky ? "py-5 lg:py-2" : "py-8"
-                } `}
-              >
-                <Image
-                  src="/images/logo/logo-2.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="w-full dark:hidden"
-                />
-                <Image
-                  src="/images/logo/logo.svg"
-                  alt="logo"
-                  width={140}
-                  height={30}
-                  className="hidden w-full dark:block"
-                />
-              </Link>*/}
+             
             </div>
             <div className="flex w-full items-center justify-between px-4">
               <div>
@@ -159,22 +143,37 @@ const Header = () => {
                   </ul>
                 </nav>
               </div>
+              
               <div className="flex items-center justify-end pr-16 lg:pr-0">
-                {/*<Link
-                  href="/signin"
-                  className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70 dark:text-white md:block"
-                >
-                  Sign In
-                              </Link>*/}
-                {/* <Link
-                  href="/signin"
-                  className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
-                >
-                  Sign In
-                </Link> */}
-                {/* <div>
+              {sessionValue !== null && (
+                  <div className="mr-4">
+                    <img
+                      src={sessionValue.user.image}
+                      alt="User Image"
+                      className="w-8 h-8 rounded-full"
+                    />
+                  </div>
+                )} 
+              {sessionValue !== null ? (
+
+            <Link
+              href="/signin"
+              className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+            >
+              
+              {sessionValue?.user?.name}
+            </Link>
+          ) : (
+            <Link
+              href="/signin"
+              className="ease-in-up hidden rounded-md bg-primary py-3 px-8 text-base font-bold text-white transition duration-300 hover:bg-opacity-90 hover:shadow-signUp md:block md:px-9 lg:px-6 xl:px-9"
+            >
+              Sign In
+            </Link>
+          )}
+                <div>
                   <ThemeToggler />
-                </div> */}
+                </div>
               </div>
             </div>
           </div>
